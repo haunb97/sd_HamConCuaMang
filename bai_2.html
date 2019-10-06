@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hate</title>
+</head>
+<body>
+<script>
+
+    let num = prompt('nhập vào một số');
+    num.substr();
+    console.log(num.length)
+    //gán num thành một mảng đồng thời gán num làm mảng con cho number
+    let number = [num[0]];
+    for(let i =1 ; i<=num.length;i++){
+        if(num[i-1]%2==0 && num[i]%2==0){
+            //gán t
+            number.push('-'+num[i])
+        }
+        else {number.push(num[i])}
+    }
+    document.write(number.join(''))
+
+
+
+</script>
+</body>
+</html>
